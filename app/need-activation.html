@@ -1,0 +1,34 @@
+<!--#set var="title" value="OptimizedHTML 5" -->
+<!--#include virtual="/parts/header.html" -->
+
+<main id="account">
+  <div id="overlay" class=""></div>
+
+  <div id="activation">
+    <div class="activation-container">
+      <div class="activation-content">
+        <a href="/" class="logo">
+          <img src="/images/logo.svg" alt="Lawyeredup" />
+        </a>
+        <div class="activation-section">
+          <div class="icon">
+            <img src="/images/message.svg" alt="Message" />
+          </div>
+          <div class="content">
+            Contul dvs. a fost creat cu succes. V-am trimis un link de confirmare către adresa dvs.
+            de e-mail. Vă rugăm să faceți clic pe linkul din e-mail pentru a vă activa contul
+          </div>
+          <div class="actions">
+            <form action="#" method="POST">
+              <input type="hidden" name="email" value="user.email@example.com">
+              <button type="submit" class="btn small-btn">Retrimiteți e-mailul</button>
+            </form>
+            <a href="/main/logout.php" class="btn small-btn outline" role="button">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!--#include virtual="/parts/footer.html" -->

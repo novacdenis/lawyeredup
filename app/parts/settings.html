@@ -1,0 +1,80 @@
+<div id="settings" class="popup">
+  <div class="popup-head">
+    <h3 class="popup-title">
+      <span class="main-text">Settings</span>
+    </h3>
+    <button class="popupBtn btn-icon"><i class="far fa-times"></i></button>
+  </div>
+  <div class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Seteza Imagine">
+      <div class="icon"><i class="far fa-id-badge"></i></div>
+      <div class="popup-section_item-inner">
+        <div id="user-set-image">
+          <div class="current-image user-image">
+            <img src="../images/dist/95x95_agent_img.png" id="changedImagePreview">
+          </div>
+          <div class="change-file_box">
+            <button type="button" class="btn small-btn" id="changedImageBtn">Editeză imaginea de profil</button>
+            <input type="file" value="null" name="image" id="changedImageInput" accept=".png, .jpg, .jpeg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Numele/Prenumele">
+      <div class="icon"><i class="far fa-user"></i></div>
+      <div class="popup-section_item-inner">
+        <input type="text" placeholder="Name" value="Name" class="popup-input">
+        <input type="text" placeholder="Surname" value="Surname" class="popup-input">
+      </div>
+    </div>
+  </div>
+  <div class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Parola">
+      <div class="icon"><i class="far fa-user-unlock"></i></div>
+      <div class="popup-section_item-inner">
+        <input type="password" placeholder="Enter new password" class="popup-input">
+        <input type="password" placeholder="Repeat new password" class="popup-input">
+      </div>
+    </div>
+  </div>
+  <div id="remove-account" class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Șterge Contul">
+      <div class="icon"><i class="far fa-trash"></i></div>
+      <div class="popup-section_item-inner">
+        <h3>Șterge Contul</h3>
+        <p>*După ce vă ștergeți contul, nu mai există nicio întoarcere. Te rog să fii sigur.</p>
+        <button type="submit" class="openPopup btn small-btn danger" data-popup="#remove-account_confirmation">Șterge-ți contul</button>
+      </div>
+    </div>
+    <button type="submit" class="popup-section_btn btn small-btn">Save</button>
+  </div>
+</div>
+
+<div id="remove-account_confirmation" class="popup" data-prev-popup="#settings">
+  <div class="popup-head">
+    <h3 class="popup-title">
+      <span class="main-text">Șterge Contul</span>
+    </h3>
+    <button class="popupBtn btn-icon"><i class="far fa-times"></i></button>
+  </div>
+  <div class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Atenție">
+      <div class="icon"><i class="far fa-info-circle"></i></div>
+      <div class="popup-section_item-inner">
+        <p>We will <span>immediately</span> delete all of your data.</p>
+        <p>You will no longer be billed, and your username will be available to anyone.</p>
+      </div>
+    </div>
+  </div>
+  <div class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Confirmă parola">
+      <div class="icon"><i class="far fa-unlock-alt"></i></div>
+      <div class="popup-section_item-inner">
+        <input type="password" id="remove-input" placeholder="Confirmă parola*" class="popup-input">
+      </div>
+    </div>
+    <button type="submit" id="remove-button" class="popup-section_btn btn small-btn danger disabled">Șterge</button>
+  </div>
+</div>

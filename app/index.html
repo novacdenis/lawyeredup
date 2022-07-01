@@ -1,12 +1,120 @@
 <!--#set var="title" value="OptimizedHTML 5" -->
 <!--#include virtual="/parts/header.html" -->
 
-	<div style="max-width: 700px; margin: auto">
+<main id="account">
+  <!--#include virtual="/parts/nav.html" -->
+  <!--#include virtual="/parts/settings.html" -->
+  <div id="overlay" class=""></div>
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
-	
-	</div>
+  <div id="main">
+    <div class="user-header">
+      <h1 class="main-title">Name Surname</h1>
+    </div>
+    <div class="main-content">
+      <div class="main-content_title-group">
+        <h3 class="main-content_title">My tickets</h3>
+        <a href="" class="btn btn-colored small-btn openPopup" data-popup="#selectOption">Ask a Question</a>
+      </div>
+
+      <!-- <div class="data-not-found">
+        <div class="container">
+          <span class="icon">
+            <img src="../images/no-data.svg" class="svg-icon" alt="" />
+          </span>
+          <span class="text">Nu-s Date</span>
+        </div>
+      </div> -->
+      <div class="tickets-list">
+        <a href="single.html">
+          <div class="ticket-box premium" data-timestamp="1622808207">
+            <span class="ticket-timer"></span>
+            <h3 class="ticket-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+            <p class="ticket-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam asperiores, iste veritatis ad
+              in officiis unde?...
+            </p>
+            <div class="ticket-meta">
+              <span class="ticket-date">25.01.2021</span>
+              <span class="ticket-status waiting">Waiting</span>
+              <span class="ticket-attach"><i class="far fa-link"></i> 2 files</span>
+            </div>
+          </div>
+        </a>
+        <!-- <div class="ticket-box">
+          <h3 class="ticket-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+          <p class="ticket-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam asperiores, iste
+            veritatis ad in officiis unde?...</p>
+          <div class="ticket-meta">
+            <span class="ticket-date">25.01.2021</span>
+            <span class="ticket-status solved">Solved</span>
+          </div>
+        </div> -->
+        <div class="ticket-box">
+          <span class="ticket-timer"></span>
+          <h3 class="ticket-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+          <p class="ticket-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam asperiores, iste veritatis ad in
+            officiis unde?...
+          </p>
+          <div class="ticket-meta">
+            <span class="ticket-date">25.01.2021</span>
+            <span class="ticket-status solved">Solved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="selectOption" class="popup">
+    <div class="popup-scroller">
+      <div class="popup-head">
+        <h3 class="popup-title">
+          <span class="main-text">Alege opțiunea preferată</span>
+        </h3>
+        <button class="popupBtn btn-icon"><i class="far fa-times"></i></button>
+      </div>
+      <div class="popup-section">
+        <div class="popup-grid">
+          <div class="card active">
+            <h3 class="card-title">Adresează întrebare simplă</h3>
+            <p class="card-descrp">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro facere culpa modi omnis
+              sapiente amet provident sit labore consectetur.
+            </p>
+            <ul class="card-list">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <a href="/ticket/ask.html?type=simple" class="btn btn-default inverse">Întreabă</a>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Cere opinie juridică</h3>
+            <p class="card-descrp">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro facere culpa modi omnis
+              sapiente amet provident sit labore consectetu
+            </p>
+            <ul class="card-list">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <a href="/ticket/ask.html?type=juridic" class="btn btn-default">Întreabă</a>
+          </div>
+        </div>
+        <div class="card inline">
+          <h3 class="card-title">Consultanță telefonică de urgență</h3>
+          <p class="card-descrp">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro facere culpa modi omnis
+            sapiente amet provident.
+          </p>
+          <a href="" class="btn small-btn">Apelează +4072057644</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
 <!--#include virtual="/parts/footer.html" -->

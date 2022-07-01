@@ -5,26 +5,291 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>OptimizedHTML 5</title>
+	<title>
+		OptimizedHTML 5
+	</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/fontawesome.min.css">
+	<link rel="stylesheet" href="/css/regular.min.css">
+	<link rel="stylesheet" href="/css/brands.min.css">
+	<link rel="stylesheet" href="/css/main.min.css">
 
 </head>
 
 <body>
 
-	<div style="max-width: 700px; margin: auto">
+<main id="account">
+  <div id="nav">
+  <nav class="main-nav">
+    <div class="main-nav_top">
+      <div class="nav-item">
+        <a href="/info" class="nav-link active" title="Overview" data-tooltip="Ceva title">
+          <span class="icon"><i class="far fa-info-circle"></i></span>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a
+          href="/"
+          class="nav-link"
+          data-tooltip="This link goes nowhere"
+          data-tooltip-location="right"
+          data-text-content="Intrebari"
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
-	
-	</div>
+        >
+          <span class="icon">
+            <i class="far fa-ticket-alt"></i>
+            <span class="notify"></span>
+          </span>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a
+          href="#"
+          data-popup="#settings"
+          data-text-content="Setări"
+          class="openPopup nav-link"
+          data-tooltip="This link goes nowhere"
+          data-tooltip-location="right"
+        >
+          <span class="icon"><i class="far fa-cog"></i></span>
+        </a>
+      </div>
+      <!-- <div class="nav-item others">
+        <a
+          href="#"
+          data-popup="#settings"
+          class="nav-link"
+          data-tooltip="Altele"
+          data-tooltip-location="right"
+        >
+          <span class="icon"><i class="far fa-cog"></i></span>
+        </a>
+        <div class="main-nav_other">
+          <a href="#" class="main-nav_other_item">
+            <span class="icon"><i class="far fa-cog"></i></span>
+            <span class="text">Contracte</span>
+          </a>
+          <a href="#" class="main-nav_other_item">
+            <span class="icon"><i class="far fa-cog"></i></span>
+            <span class="text">Contracte</span>
+          </a>
+        </div>
+      </div> -->
+    </div>
+    <div class="main-nav_bottom">
+      <div class="nav-item">
+        <a href="" class="nav-link" title="Go to home page">
+          <span class="icon"><i class="far fa-home-alt"></i></span>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="" class="nav-link" title="Logout">
+          <span class="icon"><i class="far fa-sign-out-alt"></i></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
 
-	<script src="js/app.min.js"></script>
+  <div id="settings" class="popup">
+  <div class="popup-head">
+    <h3 class="popup-title">
+      <span class="main-text">Settings</span>
+    </h3>
+    <button class="popupBtn btn-icon"><i class="far fa-times"></i></button>
+  </div>
+  <div class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Seteza Imagine">
+      <div class="icon"><i class="far fa-id-badge"></i></div>
+      <div class="popup-section_item-inner">
+        <div id="user-set-image">
+          <div class="current-image user-image">
+            <img src="../images/dist/95x95_agent_img.png" id="changedImagePreview">
+          </div>
+          <div class="change-file_box">
+            <button type="button" class="btn small-btn" id="changedImageBtn">Editeză imaginea de profil</button>
+            <input type="file" value="null" name="image" id="changedImageInput" accept=".png, .jpg, .jpeg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Numele/Prenumele">
+      <div class="icon"><i class="far fa-user"></i></div>
+      <div class="popup-section_item-inner">
+        <input type="text" placeholder="Name" value="Name" class="popup-input">
+        <input type="text" placeholder="Surname" value="Surname" class="popup-input">
+      </div>
+    </div>
+  </div>
+  <div class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Parola">
+      <div class="icon"><i class="far fa-user-unlock"></i></div>
+      <div class="popup-section_item-inner">
+        <input type="password" placeholder="Enter new password" class="popup-input">
+        <input type="password" placeholder="Repeat new password" class="popup-input">
+      </div>
+    </div>
+  </div>
+  <div id="remove-account" class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Șterge Contul">
+      <div class="icon"><i class="far fa-trash"></i></div>
+      <div class="popup-section_item-inner">
+        <h3>Șterge Contul</h3>
+        <p>*După ce vă ștergeți contul, nu mai există nicio întoarcere. Te rog să fii sigur.</p>
+        <button type="submit" class="openPopup btn small-btn danger" data-popup="#remove-account_confirmation">Șterge-ți contul</button>
+      </div>
+    </div>
+    <button type="submit" class="popup-section_btn btn small-btn">Save</button>
+  </div>
+</div>
+
+<div id="remove-account_confirmation" class="popup" data-prev-popup="#settings">
+  <div class="popup-head">
+    <h3 class="popup-title">
+      <span class="main-text">Șterge Contul</span>
+    </h3>
+    <button class="popupBtn btn-icon"><i class="far fa-times"></i></button>
+  </div>
+  <div class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Atenție">
+      <div class="icon"><i class="far fa-info-circle"></i></div>
+      <div class="popup-section_item-inner">
+        <p>We will <span>immediately</span> delete all of your data.</p>
+        <p>You will no longer be billed, and your username will be available to anyone.</p>
+      </div>
+    </div>
+  </div>
+  <div class="popup-section">
+    <div class="popup-section_item" data-mobile-text="Confirmă parola">
+      <div class="icon"><i class="far fa-unlock-alt"></i></div>
+      <div class="popup-section_item-inner">
+        <input type="password" id="remove-input" placeholder="Confirmă parola*" class="popup-input">
+      </div>
+    </div>
+    <button type="submit" id="remove-button" class="popup-section_btn btn small-btn danger disabled">Șterge</button>
+  </div>
+</div>
+  <div id="overlay" class=""></div>
+
+  <div id="main">
+    <div class="user-header">
+      <h1 class="main-title">Name Surname</h1>
+    </div>
+    <div class="main-content">
+      <div class="main-content_title-group">
+        <h3 class="main-content_title">My tickets</h3>
+        <a href="" class="btn btn-colored small-btn openPopup" data-popup="#selectOption">Ask a Question</a>
+      </div>
+
+      <!-- <div class="data-not-found">
+        <div class="container">
+          <span class="icon">
+            <img src="../images/no-data.svg" class="svg-icon" alt="" />
+          </span>
+          <span class="text">Nu-s Date</span>
+        </div>
+      </div> -->
+      <div class="tickets-list">
+        <a href="single.html">
+          <div class="ticket-box premium" data-timestamp="1622808207">
+            <span class="ticket-timer"></span>
+            <h3 class="ticket-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+            <p class="ticket-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam asperiores, iste veritatis ad
+              in officiis unde?...
+            </p>
+            <div class="ticket-meta">
+              <span class="ticket-date">25.01.2021</span>
+              <span class="ticket-status waiting">Waiting</span>
+              <span class="ticket-attach"><i class="far fa-link"></i> 2 files</span>
+            </div>
+          </div>
+        </a>
+        <!-- <div class="ticket-box">
+          <h3 class="ticket-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+          <p class="ticket-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam asperiores, iste
+            veritatis ad in officiis unde?...</p>
+          <div class="ticket-meta">
+            <span class="ticket-date">25.01.2021</span>
+            <span class="ticket-status solved">Solved</span>
+          </div>
+        </div> -->
+        <div class="ticket-box">
+          <span class="ticket-timer"></span>
+          <h3 class="ticket-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+          <p class="ticket-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam asperiores, iste veritatis ad in
+            officiis unde?...
+          </p>
+          <div class="ticket-meta">
+            <span class="ticket-date">25.01.2021</span>
+            <span class="ticket-status solved">Solved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="selectOption" class="popup">
+    <div class="popup-scroller">
+      <div class="popup-head">
+        <h3 class="popup-title">
+          <span class="main-text">Alege opțiunea preferată</span>
+        </h3>
+        <button class="popupBtn btn-icon"><i class="far fa-times"></i></button>
+      </div>
+      <div class="popup-section">
+        <div class="popup-grid">
+          <div class="card active">
+            <h3 class="card-title">Adresează întrebare simplă</h3>
+            <p class="card-descrp">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro facere culpa modi omnis
+              sapiente amet provident sit labore consectetur.
+            </p>
+            <ul class="card-list">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <a href="/ticket/ask.html?type=simple" class="btn btn-default inverse">Întreabă</a>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Cere opinie juridică</h3>
+            <p class="card-descrp">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro facere culpa modi omnis
+              sapiente amet provident sit labore consectetu
+            </p>
+            <ul class="card-list">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <a href="/ticket/ask.html?type=juridic" class="btn btn-default">Întreabă</a>
+          </div>
+        </div>
+        <div class="card inline">
+          <h3 class="card-title">Consultanță telefonică de urgență</h3>
+          <p class="card-descrp">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro facere culpa modi omnis
+            sapiente amet provident.
+          </p>
+          <a href="" class="btn small-btn">Apelează +4072057644</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="/js/app.min.js"></script>
 
 </body>
+
 </html>
